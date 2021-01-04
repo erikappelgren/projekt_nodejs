@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify 2</title>
+    <style>
+        td {
+            border: solid 1.5px;
+            border-color: #18324c;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        body {
+            border: solid;
+            border-color: #18324c;
+            padding: 1%;
+            background-color: #ddf5ea;
+            font-family: Arial;
+            text-shadow: 0.4px 0.4px;
+        }
+
+        #title {
+            text-align: center;
+            color: #18324c;
+            font-family: Arial;
+            font-size: 50px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            background-color: #ddf5ea;
+            padding: 10px;
+            justify-content: center;
+            position: center;
+            align-content: space-evenly;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1.5px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+        #inputbutton {
+            
+            color: #18324c;
+        }
+        #inputbutton:hover{
+            background: #43D1AF;
+            color: azure;
+        }
+        .bouncy {
+            animation: bouncy 5s infinite linear;
+            position: relative;
+        }
+        img {
+            display: inline-block;
+        }
+        .title {
+            color: #43D1AF;
+        }
+
+        @keyframes bouncy {
+            0% {
+                top: 0em
+            }
+
+            40% {
+                top: 0em
+            }
+
+            43% {
+                top: -0.9em
+            }
+
+            46% {
+                top: 0em
+            }
+
+            48% {
+                top: -0.4em
+            }
+
+            50% {
+                top: 0em
+            }
+
+            100% {
+                top: 0em;
+            }
+        }
+    </style>
+    
+    <script>
+        
+    </script>
+</head>
+    <body>
+        <div class="menu">
+            <h1 id="title" >Spotify 2</h1>
+            <hr />
+            <form action="/addsong" class="grid-container">
+                <input type='submit' value='Add new song!' class="grid-item bouncy" id="inputbutton"  style="animation-delay:0.07s" />
+            
+            </form>
+        </div>
+    </body>
+</html>
